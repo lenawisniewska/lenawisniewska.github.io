@@ -8,7 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><a href="/assets/pdf/Wisniewska_CV.pdf">CV (Nov 2026)</a> · <a href="mailto:lena.wisniewska1@gmail.com">Email</a> · <a href="https://github.com/lenawisniewska">GitHub</a> · <a href="https://www.linkedin.com/in/lena-wisniewska">LinkedIn</a></p>
+    <p><a href="/assets/pdf/Wisniewska_CV.pdf">CV (Nov 2026)</a> · <a href="mailto:lena.wisniewska1@gmail.com">Email</a><br><a href="https://github.com/lenawisniewska">GitHub</a> · <a href="https://www.linkedin.com/in/lena-wisniewska">LinkedIn</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # icons at the bottom of the page (links are shown as text under the photo instead)

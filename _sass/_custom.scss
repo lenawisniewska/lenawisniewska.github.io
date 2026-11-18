@@ -32,11 +32,10 @@ h6 {
   }
 }
 
-// Text links under the photo (CV · Email · GitHub · LinkedIn): body serif, kept on one line
+// Text links under the photo (CV · Email / GitHub · LinkedIn): body serif, two short lines
 .profile .more-info {
   font-family: inherit;
   font-size: 0.9rem;
-  white-space: nowrap;
 }
 
 // No footer
