@@ -1,0 +1,134 @@
+/*******************************************************************************
+ * Site-specific overrides
+ ******************************************************************************/
+
+// Formal serif typeface (loaded via third_party_libraries.google_fonts in _config.yml)
+body {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+// Smaller email / GitHub / LinkedIn icons under the bio
+.social {
+  .contact-icons {
+    font-size: 1.5rem;
+
+    a {
+      margin: 0 0.4rem;
+    }
+  }
+
+  .contact-note {
+    font-size: 0.95rem;
+  }
+}
+
+// Text links under the photo (CV · Email · GitHub · LinkedIn): body serif, kept on one line
+.profile .more-info {
+  font-family: inherit;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+// No footer
+footer {
+  display: none !important;
+}
+
+// Research page entries: title (+ grey coauthors), italic status line, row of link buttons
+.post article {
+  h2 {
+    font-size: 1.35rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .section-note {
+    margin-bottom: 1rem;
+    color: var(--global-text-color-light);
+  }
+
+  .paper {
+    margin-bottom: 1.4rem;
+
+    p {
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  .paper-title {
+    font-weight: 600;
+  }
+
+  .paper-authors {
+    font-weight: 400;
+    color: var(--global-text-color-light);
+  }
+
+  .paper-status {
+    font-style: italic;
+    color: var(--global-text-color-light);
+  }
+
+  .paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.35rem;
+
+    a {
+      padding: 0 0.5rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 2px;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      text-decoration: none;
+
+      &:hover {
+        border-color: var(--global-theme-color);
+        background: var(--global-theme-color);
+        color: var(--global-hover-text-color);
+      }
+    }
+  }
+
+  .abstract-text {
+    margin: 0.5rem 0 0.75rem;
+  }
+}
+
+// Ongoing-project pages (_layouts/project.liquid)
+.project-figure {
+  margin: 1rem 0 1.5rem;
+
+  .figure-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    border: 1px dashed var(--global-divider-color);
+    border-radius: 0.25rem;
+    color: var(--global-text-color-light);
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+.project-back {
+  margin-top: 2rem;
+}

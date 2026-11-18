@@ -1,0 +1,22 @@
+---
+layout: page
+---
+{% comment %}
+  Ongoing-project page (local layout, not from al_folio_core).
+  Front matter: title, description (one-line meta), image (path under assets/img/projects/), caption.
+  See _projects/TEMPLATE.md.
+{% endcomment %}
+<figure class="project-figure">
+  {% if page.image %}
+    {% include figure.liquid path=page.image class="img-fluid rounded" alt=page.caption %}
+  {% else %}
+    <div class="figure-placeholder">Key chart or image</div>
+  {% endif %}
+  {% if page.caption %}
+    <figcaption>{{ page.caption }}</figcaption>
+  {% endif %}
+</figure>
+
+{{ content }}
+
+<p class="project-back"><a href="{{ '/research/' | relative_url }}">&larr; Back to Research</a></p>

@@ -1,0 +1,39 @@
+---
+# Local override of al_folio_core's assets/css/main.scss: adds theme colors and the "custom" partial.
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }},
+  // Site-specific link/accent colours: blue (light mode) and light blue (dark mode) instead of the default purple/pink and cyan
+  $purple-color: #1d5fa8,
+  $cyan-color: #8ab4f8
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Site-specific overrides (fonts, social icons)
+@use "custom";

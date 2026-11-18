@@ -1,0 +1,22 @@
+---
+layout: none
+permalink: /cv/
+title: CV
+nav: true
+nav_order: 2
+---
+{% comment %} The CV tab opens the PDF directly. Replace assets/pdf/Wisniewska_CV.pdf to update the CV. {% endcomment %}
+{% assign cv = '/assets/pdf/Wisniewska_CV.pdf' | relative_url %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CV | {{ site.title }}</title>
+    <meta http-equiv="refresh" content="0; url={{ cv }}">
+    <link rel="canonical" href="{{ cv | absolute_url }}">
+    <script>location.replace("{{ cv }}");</script>
+  </head>
+  <body>
+    <a href="{{ cv }}">Open CV (PDF)</a>
+  </body>
+</html>
